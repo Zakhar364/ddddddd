@@ -25,6 +25,37 @@ def send_cool(message):
 def send_heh(message):
      bot.reply_to(message, "hehehehe")
 
+@bot.message_handler(commands=['mem'])
+def send_mem(message):
+    with open('images/mem1.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)  
+
+@bot.message_handler(commands=['mem2'])
+def send_mem(message):
+    with open('images/mem2.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)
+
+@bot.message_handler(commands=['mem3'])
+def send_mem(message):
+    with open('images/mem3.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)
+
+@bot.message_handler(commands=['animals'])
+def send_mem(message):
+    with open('images/animals.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)
+
+@bot.message_handler(commands=['animals2'])
+def send_mem(message):
+    with open('images/animals2.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)
+
+@bot.message_handler(commands=['animals3'])
+def send_mem(message):
+    with open('images/animals3.jpg', 'rb') as f:  
+        bot.send_photo(message.chat.id, f)
+
+
 
 
 
